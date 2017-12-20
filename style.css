@@ -9,7 +9,7 @@ body{
 .Header{
   position: relative;
   border-top: 5px #a7c253 solid;
-  height: 10%;
+  height: 96px;
   width: 960px;
   left: 50%;
   transform: translateX(-50%);
@@ -17,7 +17,7 @@ body{
 
 .Header_Container{
   position: absolute;
-  width: 95%;
+  width: 918px;
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -52,23 +52,29 @@ body{
 }
 
 .Navigation_Menu > a {
-  display: block;
+  display: inline-block;
   float: left;
   text-decoration: none;
   color: #505050;
-  height: 100%;
-  padding: 0px 20px;
+  height: 96px !important;
   text-align: center;
+  padding: 0px;
+  font-size: 13px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-left: 37px;
 }
 
 .Navigation_Menu > a:hover {
   background: #a7c253;
   color: white;
+  padding: 0px 20px;
 }
 
 .Vertical_Center{
   position: relative;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 
@@ -83,7 +89,7 @@ body{
 .Header_Motto{
   text-align: center;
   display: block;
-  margin: 50px 10%;
+  margin: 43px 10%;
   font-style: italic;
   font-size: 22px;
   color: rgb(102,102,102);
@@ -194,6 +200,7 @@ body{
   transition: all .25s ease;
   margin: 5px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .Pagination_Item.active{
@@ -224,7 +231,7 @@ body{
 .Information {
     display: inline-block;
     border-top: 1px #e2e2e2 solid;
-    margin-top: 11px;
+    margin-top: 25px;
     padding-top: 37px;
     color: rgb(102,102,102);
 }
@@ -240,4 +247,17 @@ body{
     padding: 5px;
     margin-top: 25px;
     border: 1px #e2e2e2 solid;
+}
+
+
+.About_Description {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.Redirect {
+    color: #a7c353;
+    font-size: 14px;
+    float: right;
 }
