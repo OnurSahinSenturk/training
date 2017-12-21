@@ -6,6 +6,16 @@ body{
   margin: 0px;
 }
 
+.Back_Wrapper {
+    display: inline-block;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    background: #313131;
+}
+
 .Header{
   position: relative;
   border-top: 5px #a7c253 solid;
@@ -13,6 +23,7 @@ body{
   width: 960px;
   left: 50%;
   transform: translateX(-50%);
+  background: white;
 }
 
 .Header_Container{
@@ -28,7 +39,7 @@ body{
   position: absolute;
   width: 10%;
   height: 90%;
-  background: url(http://greendestinations.org/wp-content/uploads/2017/04/Green-Destinations-Logo-FINAL-full-1.png);
+  background: url(images/Logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -52,24 +63,22 @@ body{
 }
 
 .Navigation_Menu > a {
-  display: inline-block;
+  display: block;
   float: left;
   text-decoration: none;
   color: #505050;
   height: 96px !important;
   text-align: center;
-  padding: 0px;
   font-size: 13px;
   font-weight: lighter;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin-left: 37px;
+  padding: 0px 20px;
 }
 
 .Navigation_Menu > a:hover {
   background: #a7c253;
   color: white;
-  padding: 0px 20px;
 }
 
 .Vertical_Center{
@@ -84,6 +93,8 @@ body{
   width: 920px;
   left: 50%;
   transform: translateX(-50%);
+  background: white;
+  padding: 0px 20px 30px;
 }
 
 .Header_Motto{
@@ -126,12 +137,18 @@ body{
   left: 10px;
   top: 42%;
   transform: translateY(-50%);
+  background: url(images/Left%20Arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #next_button{
   right: 10px;
   top: 42%;
   transform: translateY(-50%);
+  background: url(images/Right%20Arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .Slider_Row{
@@ -149,7 +166,7 @@ body{
   float: left;
   color: white;
   text-align: center;
-  background: #353535;
+  background: #313131;
 }
 
 .Slider_Info{
@@ -249,9 +266,9 @@ body{
     border: 1px #e2e2e2 solid;
 }
 
-
 .About_Description {
     margin-top: 15px;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -260,4 +277,125 @@ body{
     color: #a7c353;
     font-size: 14px;
     float: right;
+    cursor: pointer;
+}
+
+.Services_Header {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.Image_Container_Service {
+    height: 64px;
+    width: 64px;
+    float: left;
+    margin-right: 17px;
+    background: #313131;
+}
+
+.Service_Item {
+    height: 94px;
+}
+
+
+.Service_Description {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 8px;
+    display: inline-block;
+    width: calc(280px - 81px);
+}
+
+.Service_Title {
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.Testimonials_Header {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.Testimonial_Item {
+    margin-bottom: 19px;
+    display: inline-block;
+}
+
+.Testimonials img {
+  margin-right: 11px;
+  float: left;
+}
+
+.Testimonial_Title {
+    padding-top: 12px;
+}
+
+.Light {
+}
+
+.Testimonial_Description {
+    float: left;
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.Dummy_Image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #313131;
+}
+
+
+footer {
+    position: relative;
+    width: 960px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #313131;
+    color: white;
+}
+
+.Footer_Column {
+    position: relative;
+    width: 23.7%;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 1.5%;
+}
+
+.Footer_Column:nth-child(4) {
+    margin-right: 0px !important;
+}
+
+.Footer_Row:nth-child(1) {
+    border-top: 0px;
+}
+
+.Footer_Row {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px #3a3a3a solid;
+}
+
+.Left {
+    float: left;
+}
+
+.Right {
+    position: absolute;
+    float: right;
+    right: 0px;
+}
+
+.Footer_Copyright {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.Column_Header {
+    margin-top: 37px;
+    padding-bottom: 11px;
+    border-bottom: 1px #3a3a3a solid;
 }
