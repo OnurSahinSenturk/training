@@ -33,6 +33,7 @@ body{
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 1px #a7c253 solid;
+  box-sizing: border-box;
 }
 
 #header_logo{
@@ -59,7 +60,7 @@ body{
 .Navigation_Menu{
   position: absolute;
   height: 100%;
-  right: 0px;
+  right: 0;
 }
 
 .Navigation_Menu > a {
@@ -371,6 +372,7 @@ footer {
 
 .Footer_Row:nth-child(1) {
     border-top: 0px;
+    margin-bottom: 12px;
 }
 
 .Footer_Row {
@@ -392,10 +394,125 @@ footer {
 .Footer_Copyright {
     display: inline-block;
     padding: 20px 0px;
+    font-size: 13px;
+    color: #969696;
 }
 
 .Column_Header {
     margin-top: 37px;
     padding-bottom: 11px;
     border-bottom: 1px #3a3a3a solid;
+    margin-bottom: 23px;
+}
+
+.Details {
+    font-size: 13px;
+    color: #989898;
+    margin-bottom: 4px;
+}
+
+.Company_Phone.Details {
+    margin-top: 16px;
+}
+
+.Company_Office_Hours_Header.Details {
+    margin-top: 18px;
+    font-weight: bolder;
+}
+
+
+footer a {
+  float: none !important;
+  text-decoration: none;
+}
+
+.Social_Logo {
+    width: 32px;
+    height: 32px;
+    float: left;
+    background: #3a3a3a;
+    border-radius: 35px;
+}
+
+.Social_Item {
+  display: inline-block;
+  line-height: 35px;
+  border-bottom: 1px #3a3a3a solid;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+}
+
+.Social_Logo {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-color: #3a3a3a !important;
+  margin-right: 5px;
+}
+
+.Linkedin .Social_Logo {
+  background: url(images/icon-linkedin.png);
+}
+
+.Twitter .Social_Logo {
+  background: url(images/icon-twitter.png);
+}
+
+.Pinterest .Social_Logo {
+  background: url(images/icon-pinterest.png);
+}
+
+.RSS .Social_Logo {
+  background: url(images/icon-rss.png);
+}
+
+.Blog_Item {
+  color: #989898;
+  margin-top: -3px;
+  margin-bottom: 43px;
+}
+
+.Blog_Item a{
+  float: right !important;
+  margin-top: 10px;
+}
+
+.Blog_Info {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.Blog_Title {
+    margin-bottom: 3px;
+}
+
+.Blog_Description {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+footer form input, footer form textarea {
+  background: #3a3a3a;
+  border: none;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+footer form input::placeholder, footer form textarea::placeholder {
+  color: #969696;
+}
+
+textarea {
+    height: 110px;
+    resize: none;
+}
+
+input[type="submit"] {
+    color: #313131;
+    background: #a7c353;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 80px;
+    text-transform: uppercase;
 }
